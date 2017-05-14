@@ -58,7 +58,7 @@ class Migration(migrations.Migration):
                 ('click_num', models.IntegerField(default=0, verbose_name='Number of Clicks')),
                 ('fav_nums', models.IntegerField(default=0, verbose_name='Number of Favorites')),
                 ('add_time', models.DateTimeField(default=datetime.datetime.now)),
-                ('org', models.ForeignKey(on_delete='id', to='organization.CourseOrg', to_field='Organization Belonged to')),
+                ('org', models.ForeignKey(on_delete='id', to='organization.CourseOrg', verbose_name='Organization Belonged to')),
             ],
             options={
                 'verbose_name': 'Teacher',
